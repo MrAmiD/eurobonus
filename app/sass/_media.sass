@@ -1,0 +1,133 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+  /**/
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+  #my-header .btn-c a
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    padding: 6px 15px
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+  .content
+    table
+      overflow-x: scroll
+      width: 100%
+      display: block
+      tbody
+        display: block
+        min-width: 500px
+        width: 100%
+  #my-header .disct-l
+    font-size: 10px
+    display: none
+  
+//Small: ≥576px
++media-breakpoint-down(sm)
+  /**/
+//Extra small: >0
++media-breakpoint-down(xs)
+  #my-header
+    .btn-c
+      display: none
+  #menu-btn
+    display: block
+  .form-c
+    .btn-c
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      display: flex
+      .enter-btn
+        width: 100%
+        margin-top: 30px
+    input
+      background: transparent
+      border: none
+      border-radius: 0px
+      border-bottom: solid 1px #FFFFFF
+      margin-right: 0px
+      width: auto
+      min-width: 80vw
+      font-size: 12px
+      color: #FFFFFF
+      height: 40px
+      padding-left: 0px
+      &::-webkit-input-placeholder
+        color: #FFFFFF
+        opacity: 1
+        font-size: 12px
+        font-weight: 500
+        font-family: $default-font
+        line-height: 1.2
+      &:-moz-placeholder
+        color: #FFFFFF
+        opacity: 1
+        font-size: 12px
+        font-weight: 500
+        font-family: $default-font
+        line-height: 1.2
+      &::-moz-placeholder
+        color: #FFFFFF
+        opacity: 1
+        font-size: 12px
+        font-weight: 500
+        font-family: $default-font
+        line-height: 1.2
+      &:-ms-input-placeholder
+        color: #FFFFFF
+        opacity: 1
+        font-size: 12px
+        font-weight: 500
+        font-family: $default-font
+        line-height: 1.2
+  .main-slider-c .acc-bar
+    opacity: 0.8
+  .main-slider-c .acc-bar, .main-slider .item .content-c
+    max-width: 90vw
+    padding: 22px 21px
+  .main-slider
+    .slick-dots
+      bottom: 42px 
+      li button:before
+        color: #ffffff
+        font-size: 10px
+    .item
+      .content-c
+        h1, h2, h3, h4, h5
+          font-size: 33px
+        strong
+          font-size: 25px
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+	/**/
+//Small: ≤576px
++media-breakpoint-up(sm)
+	/**/
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+  /**/
+
+
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+  /**/
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
+  .container
+    width: 1170px
+    max-width: 100%
+
