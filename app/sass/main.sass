@@ -631,18 +631,42 @@ html.mm-opening .mm-menu~.mm-slideout
 				transition: background .3s ease
 
 
+.jq-checkbox
+	outline: none!important 
+	border: none
+	background: $accent
+	width: 20px
+	height: 20px
+	&.focused
+		border: none
 
+.jq-checkbox.checked .jq-checkbox__div
+	width: 13px
+	height: 7px
+	margin: 4px 0 0 3px
+	border-bottom: 3px solid #666
+	border-left: 3px solid #666
+	transform: rotate(-50deg)
+	border-color: #FFFFFF
 #consult, .popup
 	background: $accent2
 	&.white-popup
 		background: #fff
 		.h3, .h4, p, a, label
 			color: $dark
+		.h4
+			text-align: center
+			font-weight: 100
+			font-size: 48px
+		label
+			color: $dark !important
+			font-size: 14px
 		input
 			border-radius: 0px
-			border: solid 2px $accent
+			border: solid 1px #b8b8b8
+			padding-left: 5px
 		textarea
-			border: solid 2px $accent
+			border: solid 1px #b8b8b8
 		.fancybox-close-small
 			&:after
 				color: $dark
@@ -663,6 +687,18 @@ html.mm-opening .mm-menu~.mm-slideout
 		display: flex
 		.row
 			width: 100%
+	&.page-p
+		margin: 100px 0px
+		.container
+			max-width: 600px
+		input
+			margin-bottom: 40px
+			font-size: 14px
+		.btn-accent
+			margin-top: 32px
+			font-weight: 500
+			width: 100%
+			max-width: 262px
 	.h4
 		color: #FFFFFF
 		font-size: 25px
@@ -852,6 +888,7 @@ html.mm-opening .mm-menu~.mm-slideout
 	color: #FFFFFF
 	font-weight: 500
 	background: transparent
+	transition: background .3s ease
 	svg
 		position: relative
 		top: 7px
@@ -860,7 +897,9 @@ html.mm-opening .mm-menu~.mm-slideout
 		content: ''
 		width: 100%
 	&:hover, &:focus
-		color: #FFFFFF
+		color: $accent
+		background: #FFFFFF
+
 /*buttons end*/
 
 /*my custom select start*/
@@ -1218,6 +1257,10 @@ html.mm-opening .mm-menu~.mm-slideout
 					svg
 						position: absolute
 						top: -50%
+					&:hover
+						svg 
+							path
+								fill: $accent2
 				.slick-dots
 					text-align: right
 					bottom: 20px
@@ -1264,11 +1307,13 @@ html.mm-opening .mm-menu~.mm-slideout
 						font-size: 36px
 						color: #FFFFFF
 						text-align: left
+						margin-bottom: 0px
 					.btn-transparent
 						width: 262px
 						max-width: 100%
 						display: block
 						text-align: center
+
 			.logo-c
 				img
 					max-width: 100%
@@ -1377,6 +1422,25 @@ html.mm-opening .mm-menu~.mm-slideout
 				height: 29px
 				min-width: 24px
 				border-right: 3px
+
+.logo-c
+	.img-c
+		position: relative
+		img
+			width: 170px
+			position: relative
+			top: 11px
+		.logo-txt
+			position: absolute
+			top: 11px
+			left: 125px
+			font-weight: 100
+			color: #FFFFFF
+			text-transform: uppercase
+			font-size: 22px
+			.ac2-t
+				color: $accent2
+				font-weight: 900
 .map-c
 	background: $accent
 	padding-top: 30px

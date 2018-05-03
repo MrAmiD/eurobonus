@@ -129,6 +129,20 @@ function feedbackSliderSliderInit(){//слайдер на главной стр�
     });
 }
 
+function formatDate(date) {//Форматирование даты, на выходе: день.месяц.год 01.05.2018
+
+    var dd = date.getDate();
+    if (dd < 10) dd = '0' + dd;
+
+    var mm = date.getMonth() + 1;
+    if (mm < 10) mm = '0' + mm;
+
+    var yy = date.getFullYear();
+    //if (yy < 10) yy = '0' + yy;
+
+    return dd + '.' + mm + '.' + yy;
+}
+
 $(function() {
     /*datepicker start*/
 
@@ -136,16 +150,19 @@ $(function() {
     var now = new Date();
     var minDate = new Date(new Date().getTime() + 30 * 60 * 1000);//now +30 минут
     var maxDate = new Date();
-    maxDate.setDate(maxDate.getDate()+1);//now + 1 day
+    // maxDate.setDate(maxDate.getDate()+1);//now + 1 day
+
 
     var datetime = $('.datepicker-here').datepicker({
         dateFormat : 'dd.mm.yyyy',
-        minDate: minDate,
+        // minDate: minDate,
         maxDate: maxDate,
         onSelect: function(fd, d, picker) {
             console.log('dateSelected', $('.datepicker-here').val());
         }
     });
+
+    $('#payDay').val(formatDate(new Date()));
 
     /*datepicker end*/
 
@@ -154,7 +171,7 @@ $(function() {
         $('.js-single-i input[type=checkbox]').not(this).prop('checked', false);
     });
     //setInvest start
-    $('select').styler({
+    $('select, input[type="checkbox"]').styler({
         selectSearch: true,
     });
     //setInvest end
