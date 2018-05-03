@@ -758,7 +758,6 @@ html.mm-opening .mm-menu~.mm-slideout
 	font-size: 16px
 	font-weight: 900
 	color: #FFFFFF
-	display: inline-block
 	text-align: center
 	background-image: -moz-linear-gradient( -62deg, rgb(28,104,200) 0%, rgb(21,77,179) 100%)
 	background-image: -webkit-linear-gradient( -62deg, rgb(28,104,200) 0%, rgb(21,77,179) 100%)
@@ -767,8 +766,9 @@ html.mm-opening .mm-menu~.mm-slideout
 	justify-content: center
 	align-items: center
 	border-color: transparent
+	cursor: pointer
 	&:hover, &:focus
-		background: $dark
+		background: $accent2
 		color: #FFFFFF
 .btn-dark
 	background-color: $dark
@@ -1088,8 +1088,6 @@ html.mm-opening .mm-menu~.mm-slideout
 					fill: #ffffff
 	.slick-next:before, .slick-prev:before
 		display: none
-#my-footer
-	min-height: 400px
 
 #my-header
 	background: $accent
@@ -1114,23 +1112,22 @@ html.mm-opening .mm-menu~.mm-slideout
 			text-align: center
 			&:first-child
 				margin-left: 0px
-	.user-id-c
-		position: absolute
-		top: 0px
-		transform: translateY(-100%)
-		line-height: 1.9
-		color: #FFFFFF
-		font-size: 12px
-		font-weight: 500
-		white-space: nowrap
-		width: 100%
-		left: 0px
-		text-align: center
 	.enter-btn
 		width: 132px
 		min-width: 132px
 		cursor: pointer
-
+.user-id-c
+	position: absolute
+	top: 0px
+	transform: translateY(-100%)
+	line-height: 1.9
+	color: #FFFFFF
+	font-size: 12px
+	font-weight: 500
+	white-space: nowrap
+	width: 100%
+	left: 0px
+	text-align: center
 .form-c
 	.btn-c
 		justify-content: space-between
@@ -1176,9 +1173,216 @@ html.mm-opening .mm-menu~.mm-slideout
 			font-family: $default-font
 			line-height: 1.2
 
+.partners-sec
+	padding-top: 60px
+	.h1
+		font-size: 48px
+		line-height: 1.2
+		color: $dark
+		text-align: center
+		font-weight: 100
+		margin-bottom: 45px
+	.btn-fltr
+		display: flex
+		margin-bottom: 30px
+		button
+			flex-grow: 1
+			flex-basis: 0
+			font-size: 16px
+			font-weight: 500
+			color: #FFFFFF
+			background: $dark
+			border: none
+			margin-right: 2px
+			height: 50px
+			border-radius: 2px
+			cursor: pointer
+			transition: background .3s ease
+			&:hover, &.active
+				background: $accent
+		&:last-child
+			margin-right: 0px
+
 #menu-btn
 	display: none
 
+.partners-sec
+	.partners-rr
+		.single-partner
+			.partner-slider
+				margin-bottom: 0px
+				.slick-next:before, .slick-prev:before
+					display: none
+				.slick-arrow
+					z-index: 2
+					svg
+						position: absolute
+						top: -50%
+				.slick-dots
+					text-align: right
+					bottom: 20px
+					li
+						width: 16px
+						&:last-child
+							margin-right: 15px
+					li.slick-active button:before
+						color: $accent
+					li button:before
+						font-size: 12px
+						color: #FFFFFF
+						opacity: 1
+				.slick-next
+					right: 30px
+				.slick-prev
+					left: -5px
+				.item
+					background-position: center
+					background-repeat: no-repeat
+					background-size: cover
+					height: 400px
+					width: 100%
+					position: relative 
+					&:after
+						content: ''
+						position: absolute
+						top: 0px
+						left: 0px
+						right: 0px
+						bottom: 0px
+						background: rgba($dark, 0.3)
+				.content-cc
+					margin-left: 90px
+					max-width: 375px
+					position: relative
+					z-index: 1
+					display: flex
+					flex-direction: column
+					justify-content: center
+					height: 100%
+					.h1
+						font-weight: 500
+						font-size: 36px
+						color: #FFFFFF
+						text-align: left
+					.btn-transparent
+						width: 262px
+						max-width: 100%
+						display: block
+						text-align: center
+			.logo-c
+				img
+					max-width: 100%
+			.message-c
+				margin-top: 30px
+				p
+					font-size: 14px
+					line-height: 1.2
+			.director-c
+				display: flex
+				align-items: center
+				margin-top: 15px
+				.ico-c
+					background: $accent
+					width: 46px
+					height: 46px
+					min-width: 46px
+					min-height: 46px
+					display: flex
+					justify-content: center
+					align-items: center
+					border-radius: 100%
+					margin-right: 20px
+				.title
+					font-size: 14px
+					font-weight: 500
+			.btn-c
+				display: flex
+				margin-top: 30px
+				.btn-accent
+					font-size: 14px
+					font-weight: 700
+					padding: 10px
+					margin-right: 6px
+					max-width: 50%
+					width: 50%
+					&:last-child
+						margin-right: 0px
+			.item-c
+				height: 100%
+				display: flex
+				align-items: center
+				.comp-info
+					width: 100%
+.partners-list
+	.partners-rr
+		margin-top: 30px
+		margin-bottom: 30px
+	.single-partner
+		//background: #FFFFFF
+		margin: 0px
+		.item-c
+			background: #FFFFFF
+			padding: 10px 30px
+		.col-12
+			padding: 0px
+	.part-item
+		&:nth-child(odd)
+			background: #f1f1f1
+
+#my-footer
+	background: $accent
+	padding: 15px 0px
+	.row-f
+		align-items: center
+	.disct-l
+		margin-bottom: 0px
+		color: #FFFFFF
+		font-size: 12px
+		font-weight: 500
+		line-height: 1.2
+	.logo-c
+		.img-c
+			img
+				max-width: 100%
+	.foot-b
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		.btn-transparent
+			min-width: 134px
+			text-align: center
+		.copyright
+			color: #FFFFFF
+			font-size: 12px
+			font-weight: 500
+			margin-right: 44px
+		.btn-transparent
+			position: relative
+.file-list
+	margin: 0px
+	padding: 0px
+	list-style: none
+	li
+		margin-bottom: 10px
+		a
+			display: flex
+			align-items: center
+			.svg-c
+				margin-right: 15px
+				display: flex
+				align-items: center
+				justify-content: center
+				background: $accent
+				width: 24px
+				height: 29px
+				min-width: 24px
+				border-right: 3px
+.map-c
+	background: $accent
+	padding-top: 30px
+	iframe
+		width: 100%
+		height: 500px
 /*Project end*/
 
 

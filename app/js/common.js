@@ -46,6 +46,44 @@ function MainSliderInit(){//слайдер на главной странице
 
 
 }
+function partnerSliderInit(){//слайдер на главной странице
+    $('.partner-slider').slick({
+        dots: true,
+        infinite: true,
+        //dotsClass: 'slick-dots container d-flex align-items-center justify-content-end',
+        fade: true,
+        slidesToShow: 1,
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    arrows: false,
+                    dots: true
+                }
+            }
+        ],
+        prevArrow: '<button type="button" class="slick-prev sliderAboutArrow">' +
+        '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M34.015,33.989 L34.015,0.010 L0.004,0.010 L0.004,33.989 L34.015,33.989 ZM11.557,16.711 C14.580,13.693 17.602,10.674 20.623,7.656 C20.834,7.445 21.333,7.443 21.542,7.651 C21.901,8.009 22.260,8.367 22.619,8.725 C22.619,8.750 22.619,8.775 22.619,8.801 C22.576,8.837 22.530,8.870 22.491,8.909 C19.881,11.515 17.273,14.122 14.664,16.728 C14.625,16.768 14.587,16.810 14.535,16.864 C14.584,16.917 14.628,16.968 14.675,17.015 C17.275,19.613 19.874,22.210 22.474,24.807 C22.518,24.850 22.571,24.883 22.619,24.921 C22.619,24.959 22.619,24.997 22.619,25.035 C22.437,25.208 22.251,25.379 22.072,25.555 C21.748,25.876 21.428,26.200 21.126,26.503 C17.896,23.277 14.676,20.060 11.409,16.798 C11.436,16.782 11.508,16.759 11.557,16.711 Z"/></svg>' +
+        '</button>',
+        nextArrow: '<button type="button" class="slick-next sliderAboutArrow">' +
+        '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.015,0.011 L-0.015,33.990 L33.995,33.990 L33.995,0.011 L-0.015,0.011 ZM22.443,17.290 C19.420,20.307 16.398,23.326 13.377,26.344 C13.166,26.555 12.667,26.557 12.458,26.349 C12.099,25.991 11.740,25.633 11.381,25.275 C11.381,25.250 11.381,25.225 11.381,25.199 C11.424,25.163 11.470,25.130 11.509,25.091 C14.118,22.485 16.727,19.878 19.336,17.272 C19.376,17.232 19.413,17.190 19.465,17.136 C19.416,17.083 19.372,17.032 19.325,16.985 C16.725,14.387 14.126,11.790 11.525,9.193 C11.482,9.150 11.429,9.117 11.381,9.079 C11.381,9.041 11.381,9.003 11.381,8.965 C11.563,8.792 11.749,8.621 11.928,8.444 C12.252,8.124 12.572,7.800 12.874,7.497 C16.104,10.723 19.324,13.940 22.591,17.202 C22.564,17.218 22.492,17.241 22.443,17.290 Z"/></svg>' +
+        '</button>'
+    });
+
+
+
+    $(document).on('click', '.slider-trigers .item-t', function () {
+        var slideIndex = $(this).index();
+        console.log('slideIndex = ', slideIndex);
+        // $( '.main-slider' ).slickGoTo( parseInt(slideIndex) );
+
+        var slider = $('.main-slider');
+        slider[0].slick.slickGoTo(parseInt(slideIndex));
+
+    });
+
+
+}
 function feedbackSliderSliderInit(){//слайдер на главной странице
     $('.feedback-slider').on('init', function(slick){
         console.log('.feedback-slider init was hit');

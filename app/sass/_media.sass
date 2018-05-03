@@ -32,7 +32,9 @@
   
 //Small: ≥576px
 +media-breakpoint-down(sm)
-  /**/
+  #my-footer .foot-b
+    margin-top: 30px
+    justify-content: space-between
 //Extra small: >0
 +media-breakpoint-down(xs)
   #my-header
@@ -106,6 +108,48 @@
           font-size: 33px
         strong
           font-size: 25px
+  .partners-sec .partners-rr .single-partner .partner-slider .slick-dots
+    text-align: center
+  .partners-sec .partners-rr .single-partner .partner-slider .content-cc
+    margin-left: 15px
+    margin-right: 15px
+  .partners-sec .partners-rr .single-partner .item-c
+    padding: 15px
+  .partners-list .single-partner
+    margin-left: -15px
+    margin-right: -15px
+  .partners-sec .h1
+    font-size: 32px
+  .partners-sec .btn-fltr
+    flex-wrap: wrap
+    button
+      margin-bottom: 2px
+      flex-grow: 3
+      flex-basis: 0
+      font-size: 14px
+      &:last-child
+        margin-right: 0px
+      &:first-child
+        width: 100%
+        min-width: 100%
+  #my-footer .disct-l
+    text-align: center
+  #my-footer .foot-b
+    flex-direction: column-reverse
+  #my-footer .foot-b .copyright
+    margin-right: 0px
+    margin-top: 15px
+  #my-footer .logo-c .img-c
+    margin-right: 0px
+    width: 200px
+    margin: auto
+    margin-bottom: 15px
+  .partners-sec .partners-rr .single-partner .btn-c
+    flex-direction: column
+  .partners-sec .partners-rr .single-partner .btn-c .btn-accent
+    max-width: 100%
+    width: 100%
+    margin-bottom: 5px
 /*==========  Mobile First  ==========*/
 
 //Extra small: <576px
