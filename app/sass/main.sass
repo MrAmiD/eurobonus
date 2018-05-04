@@ -355,56 +355,16 @@ html.mm-opening .mm-menu~.mm-slideout
 	h1
 		text-align: center
 		font-family: $default-font
-		margin-top: 63px
-		font-size: 30px
+		margin-top: 60px
+		font-size: 48px
 		text-transform: uppercase
 		position: relative
-		//padding-bottom: 55px
-		margin-bottom: 14px
-		//&:after
-		//	content: ''
-		//	position: absolute
-		//	width: 3px
-		//	height: 50px
-		//	background: $accent
-		//	left: 50%
-		//	transform: translateX(-50%)
-		//	bottom: -6px
-	h2
-		font-size: 24px
+		margin-bottom: 60px
+		font-weight: 100
+	h2, h3, h4, h5, h6
+		font-size: 30px
 		font-weight: 500
-		margin: 15px 0
-		margin-top: 30px
-		text-transform: uppercase
-		color: $accent
-	h3
-		font-size: 22px
-		font-weight: 500
-		margin: 15px 0
-		margin-top: 30px
-		text-transform: uppercase
-		color: $accent
-	h4
-		font-size: 20px
-		font-weight: 500
-		margin: 15px 0
-		margin-top: 30px
-		text-transform: uppercase
-		color: $accent
-	h5
-		font-size: 18px
-		font-weight: 500
-		margin: 15px 0
-		margin-top: 30px
-		text-transform: uppercase
-		color: $accent
-	h6
-		font-size: 16px
-		font-weight: 500
-		margin: 15px 0
-		margin-top: 30px
-		text-transform: uppercase
-		color: $accent
+		color: $dark
 	b
 		font-size: 16px
 		font-weight: 900
@@ -421,26 +381,33 @@ html.mm-opening .mm-menu~.mm-slideout
 	img
 		max-width: 100%
 	blockquote
-		font-weight: 900
-		font-size: 16px
 		line-height: 1.2
 		max-width: 360px
-		//padding-left: 45px
+		padding-left: 45px
 		margin: 10px 0
 		position: relative
-		border-top: solid 3px $accent
-		border-bottom: solid 3px $accent
 		padding: 25px 0
-		//&:before
-		//	content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31px" height="25px"><path fill-rule="evenodd"  fill="rgb(130, 182, 61)" d="M30.955,9.986 C30.899,11.881 30.652,13.744 29.950,15.516 C28.384,19.472 25.717,22.370 21.889,24.141 C21.330,24.400 20.765,24.646 20.191,24.904 C19.151,23.124 18.134,21.382 17.112,19.632 C19.722,18.382 21.435,16.442 21.937,13.469 C21.680,13.442 21.468,13.439 21.265,13.397 C19.324,12.995 18.036,11.772 17.298,9.964 C16.678,8.444 16.606,6.840 17.072,5.265 C17.752,2.967 19.393,1.697 21.618,1.128 C21.969,1.038 22.331,0.996 22.689,0.931 C23.155,0.931 23.621,0.931 24.088,0.931 C24.604,1.026 25.130,1.083 25.634,1.221 C28.266,1.939 29.824,3.750 30.584,6.342 C30.933,7.529 30.992,8.754 30.955,9.986 ZM13.220,15.709 C11.597,19.674 8.853,22.523 4.993,24.259 C4.514,24.474 4.031,24.680 3.531,24.898 C2.497,23.127 1.480,21.386 0.457,19.633 C3.066,18.380 4.779,16.441 5.281,13.470 C5.013,13.441 4.800,13.439 4.596,13.393 C2.328,12.874 0.972,11.376 0.387,9.158 C-0.015,7.635 0.001,6.079 0.644,4.612 C1.538,2.575 3.172,1.488 5.277,1.062 C5.523,1.013 5.771,0.975 6.019,0.931 C6.485,0.931 6.952,0.931 7.418,0.931 C7.934,1.025 8.461,1.081 8.965,1.219 C11.686,1.962 13.251,3.850 13.980,6.540 C14.321,7.797 14.337,9.087 14.283,10.378 C14.206,12.211 13.918,14.003 13.220,15.709 Z"/></svg>')
-		//	display: block
-		//	width: 22px
-		//	height: 10px
-		//	position: absolute
-		//	left: 0px
-		//	top: 0px
+		color: $accent2
+		font-weight: 100
+		font-size: 24px
+		text-indent: 10px
+		&:before
+			content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="16px"><path fill-rule="evenodd" fill="rgb(237, 63, 64)" d="M20.307,9.732 C19.240,12.369 17.424,14.301 14.818,15.482 C14.437,15.654 14.053,15.819 13.662,15.991 C12.954,14.804 12.262,13.643 11.566,12.476 C13.343,11.643 14.509,10.349 14.851,8.367 C14.676,8.350 14.532,8.347 14.393,8.319 C13.071,8.051 12.195,7.236 11.693,6.030 C11.270,5.017 11.221,3.948 11.538,2.898 C12.001,1.366 13.118,0.519 14.633,0.140 C14.872,0.080 15.119,0.052 15.362,0.009 C15.680,0.009 15.998,0.009 16.315,0.009 C16.667,0.072 17.025,0.110 17.368,0.202 C19.160,0.681 20.221,1.888 20.738,3.616 C20.976,4.408 21.016,5.224 20.991,6.045 C20.953,7.309 20.784,8.551 20.307,9.732 ZM3.314,15.561 C2.988,15.704 2.659,15.841 2.319,15.987 C1.615,14.806 0.923,13.645 0.226,12.477 C2.002,11.641 3.168,10.348 3.511,8.368 C3.328,8.348 3.183,8.347 3.044,8.316 C1.500,7.971 0.577,6.972 0.178,5.493 C-0.095,4.478 -0.085,3.441 0.354,2.462 C0.962,1.105 2.074,0.380 3.508,0.096 C3.675,0.063 3.844,0.038 4.013,0.009 C4.330,0.009 4.648,0.009 4.966,0.009 C5.317,0.071 5.675,0.109 6.019,0.201 C7.871,0.696 8.937,1.955 9.433,3.748 C9.665,4.586 9.676,5.446 9.639,6.306 C9.587,7.528 9.391,8.724 8.916,9.861 C7.811,12.504 5.942,14.403 3.314,15.561 Z"/></svg>')
+			display: block
+			width: 22px
+			height: 10px
+			position: absolute
+			left: -10px
+			top: 0px
 	table
 		width: 100%
+		table-layout: fixed
+		&.left-accent
+			th, td
+				&:first-child
+					background: $accent
+					color: #FFFFFF
+					border: solid 1px #d9d9d9
 		tbody
 			min-width: 700px
 		&.compectCount
@@ -456,29 +423,37 @@ html.mm-opening .mm-menu~.mm-slideout
 				background-color: #FFFFFF
 				border: solid 1px #d9d9d9
 		tr
-			&:nth-child(odd)
-				background: #f7f7f7
+			&:first-child
+				background: $accent
+				color: #FFFFFF
+				td, th
+					border: solid 1px #d9d9d9
 			td, th
-				border: solid 1px #d9d9d9
+				border: double 3px #d9d9d9
 				padding-left: 15px
 				padding-right: 15px
 				text-align: center
+				padding-top: 15px
+				padding-bottom: 15px
+				font-size: 14px
 	ul
 		list-style: none
 		margin-top: 20px
+		padding: 0px
 		li
 			position: relative
 			font-weight: 500
 			font-size: 16px
 			margin-bottom: 20px
+			text-indent: 37px
 			&:before
 				content: ''
 				display: block
 				width: 10px
 				height: 10px
 				position: absolute
-				left: -25px
-				top: 7px
+				left: 0px
+				top: 3px
 				background: $accent
 				border-radius: 50%
 			ul
@@ -502,10 +477,18 @@ html.mm-opening .mm-menu~.mm-slideout
 		padding-left: 0px
 		margin-top: 20px
 		li
-			font-weight: 700
+			font-weight: 500
+			margin-bottom: 20px
+			text-indent: 40px
+			position: relative
 			&:before
-				content: counter(item) ') '
+				content: counter(item) '. '
 				counter-increment: item
+				color: $accent
+				font-weight: 900
+				position: absolute
+				left: -40px
+				top: 0px
 
 .breadcrumb
 	padding: 0
@@ -787,6 +770,7 @@ html.mm-opening .mm-menu~.mm-slideout
 	&:hover, &:focus
 		background: $dark
 		color: #FFFFFF
+		text-decoration: none!important
 .btn-accent
 	background-color: $accent
 	padding: 10px 45px
@@ -1337,6 +1321,8 @@ html.mm-opening .mm-menu~.mm-slideout
 					align-items: center
 					border-radius: 100%
 					margin-right: 20px
+					background-position: center
+					background-size: cover
 				.title
 					font-size: 14px
 					font-weight: 500
@@ -1385,6 +1371,10 @@ html.mm-opening .mm-menu~.mm-slideout
 		font-size: 12px
 		font-weight: 500
 		line-height: 1.2
+		a
+			color: #FFFFFF
+			&:hover
+				text-decoration:  underline
 	.logo-c
 		.img-c
 			img
@@ -1447,6 +1437,38 @@ html.mm-opening .mm-menu~.mm-slideout
 	iframe
 		width: 100%
 		height: 500px
+
+#my-content
+	min-height: 90vh
+.title-btn
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	h2
+		font-weight: 100
+		font-size: 30px
+	a
+		color: #FFFFFF
+		font-weight: 500
+		font-size: 14px
+		margin: 15px
+		margin-right: 0px
+		padding: 10px 20px
+
+.type-page
+	margin-bottom: 60px
+
+.floor-plan
+	.h2
+		font-size: 48px
+		line-height: 1.2
+		color: #212121
+		text-align: center
+		font-weight: 100
+		margin-bottom: 15px
+	.floor-ci
+		img
+			max-width: 100%
 /*Project end*/
 
 

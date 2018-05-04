@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>EuroBonus</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+
+
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+    <style>
+        * {
+            font-family: sans-serif !important;
+        }
+    </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://praweb.ru/theme/fonts/main/fonts.css' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+</head>
+
+<body>
+
+<!--Top Arrow start-->
+<a href="javascript:" id="return-to-top">
+    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+</a>
+<!--Top Arrow end-->
+
+<div id="my-header">
+    <div class="container header-c">
+        <div class="row header-r">
+            <div class="col-9 col-sm-12 col-lg-6 col-md-4">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="logo-c">
+                            <div class="img-c">
+                                <a href="/">
+                                    <!--<img src="img/logo.png" alt="EouroBonus">-->
+                                    <img src="img/samolet.png" alt="">
+									<span class="logo-txt">
+										<span class="ac-t">
+											КЛУБ
+										</span> <br>
+										<span class="ac2-t">
+											ЕВРОБОНУС
+										</span>
+									</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <p class="disct-l">
+                            Клуб для дизайнеров интерьера и арендаторов ТЦ «ЕВРАЗИЯ»
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-sm-12 col-md-8 col-lg-6">
+
+                <!--Не выводить если пользователь не авторизован-->
+                <div  class="btn-c ">
+                    <a href="" class="btn-transparent">
+                        Общая статистика баллов
+                    </a>
+                    <a href="" class="btn-transparent">
+                        Ваш баланс: <span class="accent2-txt">4000</span>
+                    </a>
+                    <!--todo Добавить ид пользователя-->
+                    <!--todo Добавить неавторизованного пользователя-->
+                    <a href="" class="btn-transparent">
+                        Выйти
+                        <div class="user-id-c">
+                            Ваш ID: 105
+                        </div>
+                    </a>
+                </div>
+
+                <!--Не выводить если пользователь авторизован-->
+                <div style="display: none;" class="form-c">
+                    <form action="">
+                        <div class="btn-c">
+                            <input type="text" placeholder="Логин*">
+                            <input type="text" placeholder="Пароль*">
+                            <button class="btn-transparent enter-btn" type="submit">
+                                Войти
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <a  href="#my-menu" class="hamburger hamburger--squeeze js-hamburger" type="button" id="menu-btn">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+                </a>
+
+                <!--<nav id="my-menu">-->
+                <!--<ul>-->
+                <!--<li>-->
+                <!--<a href="" class="">-->
+                <!--Общая статистика баллов-->
+                <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="" class="">-->
+                <!--Ваш баланс: <span class="accent2-txt">4000</span>-->
+                <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="" class="">-->
+                <!--<div class="user-id-c">-->
+                <!--Ваш ID: 105-->
+                <!--</div>-->
+                <!--Выйти-->
+                <!--</a>-->
+                <!--</li>-->
+                <!--</ul>-->
+                <!--</nav>-->
+                <nav id="my-menu">
+                    <div class="form-c">
+                        <form action="">
+                            <div class="btn-c">
+                                <input type="text" placeholder="Логин*">
+                                <input type="text" placeholder="Пароль*">
+                                <button class="btn-transparent enter-btn" type="submit">
+                                    Войти
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="my-content" class="type-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="content">
+                    <h1>
+                        Компании-партнеры в ТЦ «Евразия»
+                    </h1>
+                    <h2>
+                        Условия участия для дизайнеров:
+                    </h2>
+                    <p>
+                        Уважаемые владельцы карт клуба евробонус.рф!
+                        Комплектуйте объекты в ТЦ «Евразия» и зарабатывайте больше!
+                        Как? Очень просто!
+                    </p>
+                    <p>
+                        Уважаемые владельцы карт клуба евробонус.рф!
+                        Комплектуйте объекты в ТЦ «Евразия» и зарабатывайте больше!
+                        Как? Очень просто!
+                    </p>
+                    <p>
+                        Предъявляйте клубную карту при      покупке в салонах-партнерах клуба и копите баллы. Получайте ЕЖЕКВАРТАЛЬНЫЕ ПРЕМИИ за накопленные      баллы  от 10 000 до 50 000 руб., а также размещение      вашей рекламы на территории ТЦ «Евразия».
+                    </p>
+                    <ul>
+                        <li>
+                            Ежедневно отслеживайте свои      накопленные баллы на сайте евробонус.рф и сравнивайте их с результатами других      дизайнеров-участников клуба.
+                        </li>
+                        <li>
+                            Оперативно      узнавайте о новинках и эксклюзивных предложениях от партнеров клуба на      сайте евробонус. рф
+                        </li>
+                        <li>
+                            На сайте евробонус. рф задавайте вопросы      напрямую собственникам компаний, запрашивайте условия сотрудничества,      договаривайтесь о сделке. Оставляйте отзывы о работе персонала,      ассортименте,  ваши пожелания.
+                        </li>
+                    </ul>
+                    <h2>
+                        Правила Пользования картой и накопления баллов:
+                    </h2>
+
+                    <ol>
+                        <li>
+                            Баллы начисляются только при покупке в салонах ТЦ «Евразия» и представленных на сайте евробонус.рф. Для удобства навигации расположение салонов вы можете посмотреть на карте этажа, а так же  по наличию в салоне фирменного знака клуба – он выглядит как лицевая сторона вашей клубной карты.
+                        </li>
+                        <li>
+                            Предъявление карты при покупке – обязательное условие для начисления баллов
+                        </li>
+                        <li>
+                            Если ваш клиент приобретает товар самостоятельно, он может назвать № карты и получить дополнительную скидку в размере 2%, которая предоставляется из гонорара дизайнера.
+                        </li>
+                        <li>
+                            За каждую полную тысячу рублей вам начисляется 1 балл.
+                        </li>
+                        <li>
+                            Баллы копятся в течение года: с 1.06.2018 по 1.06.2019. Премии за накопленное количество баллов вручаются 1 раз в 3 месяца. Сумма премий в каждом последующем периоде увеличивается.
+                        </li>
+                        <li>
+                            Премии получают дизайнеры, занявшие с 1 по 5 место по кол-ву баллов, при условии достижения минимального порога в заданном периоде:
+                        </li>
+                    </ol>
+
+                    <table class="left-accent">
+                        <tbody>
+                        <tr>
+                            <td>Период накопления</td>
+                            <td>Минимальный порог</td>
+                            <td>Премия лидера</td>
+                            <td>Премия 2 место</td>
+                            <td>Премия 3, 4, 5 место</td>
+                        </tr>
+                        <tr>
+                            <td>1 июня 2018г.&nbsp; &ndash; 31 августа 2018г.</td>
+                            <td>1000 баллов</td>
+                            <td>2500 баллов</td>
+                            <td>10000 баллов</td>
+                            <td>Печать проекта с указанием автора и его контактов на баннере и размещение его на втором этаже ТЦ &laquo;ЕВРАЗИЯ&raquo;.</td>
+                        </tr>
+                        <tr>
+                            <td>1 сентября 2018г. -&nbsp; 30 ноября 2018 г.</td>
+                            <td colspan="4">Будет объявлен до 25 августа 2018 года</td>
+                        </tr>
+                        <tr>
+                            <td>1 декабря 2018г.&nbsp; &ndash; 28 февраля 2019г.</td>
+                            <td colspan="4">Будет объявлен до 25 ноября 2018 года</td>
+                        </tr>
+                        <tr>
+                            <td>1 марта 2019 г. &ndash; 31 мая 2019г.</td>
+                            <td colspan="4">Будет объявлен до 25 февраля 2019 года</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+                    <br>
+
+                    <div class="title-btn">
+                        <h2>
+                            Детализация бонусного счета:
+                        </h2>
+                        <a href="javascript:void(0);" class="btn-accent2">
+                            Общая статистика баллов
+                        </a>
+                    </div>
+
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Компания:</td>
+                            <td>Дата:</td>
+                            <td>Сумма чека:</td>
+                            <td>Баллов начислено:</td>
+                        </tr>
+                        <tr>
+                            <td>Компания</td>
+                            <td>24.04.2018</td>
+                            <td>1 000 000</td>
+                            <td>1 000 баллов</td>
+                        </tr>
+                        <tr>
+                            <td>Компания</td>
+                            <td>24.04.2018</td>
+                            <td>1 000 000</td>
+                            <td>1 000 баллов</td>
+                        </tr>
+                        <tr>
+                            <td>Компания</td>
+                            <td>24.04.2018</td>
+                            <td>1 000 000</td>
+                            <td>1 000 баллов</td>
+                        </tr>
+                        <tr>
+                            <td>Компания</td>
+                            <td>24.04.2018</td>
+                            <td>1 000 000</td>
+                            <td>1 000 баллов</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <blockquote>
+                        Рыбак рыбака видит из далека.
+                    </blockquote>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+<div id="my-footer">
+    <div class="container">
+        <div class="row row-f">
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6">
+                <div class="row align-items-center">
+                    <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                        <div class="logo-c">
+                            <div class="img-c">
+                                <a href="/">
+                                    <!--<img src="img/logo.png" alt="EouroBonus">-->
+                                    <img src="img/samolet.png" alt="">
+									<span class="logo-txt">
+										<span class="ac-t">
+											КЛУБ
+										</span> <br>
+										<span class="ac2-t">
+											ЕВРОБОНУС
+										</span>
+									</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                        <p class="disct-l">
+                            Администрация клуба: т. <a href="">89922266903</a> <br>
+                            email: email@email.em
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-sm-12 col-md-6">
+                <div class="foot-b">
+                    <div class="copyright">
+                        © Евробонус 2010 — 2018
+                    </div>
+
+                    <a href="" class="btn-transparent">
+                        Выйти
+                        <div class="user-id-c">
+                            Ваш ID: 105
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Modal for all pages start-->
+<div data-fancybox="" data-src="#consult">
+    <div id="consult" class="popup white-popup " style="display: none">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <!--start callback_form-->
+                    <div class="h4">
+                        Обратная связь
+                    </div>
+                    <form>
+                        <input type="hidden"  name="theme" value="Заявка на обратный звонок на странице Главная">
+                        <input type="text" placeholder="Имя*" id="name" name="name">
+                        <input type="tel" placeholder="Телефон*" id="phone" name="phone">
+                        <textarea name="" id="msg-c" cols="30" rows="5" placeholder="Сообщение"></textarea>
+                        <p style="font-size: 12px">
+                            Нажимая "Отправить", Я подтверждаю, что ознакомлен с <a href="" target="_blank">политикой конфиденциальности</a> и даю согласие на обработку своих персональных данных.
+                        </p>
+                        <button type="" name="callback_form" class="btn-accent" value="Заказать">Отправить</button>
+                    </form>
+                    <!--start callback_form-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-fancybox="" data-src="#ty">
+    <div id="ty" class="popup white-popup" style="display: none">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="h1 text-center">
+                        Спасибо за Заявку!
+                    </div>
+                    <div class="h3 text-center txt-accent">
+                        Наш менеджер свяжется с Вами в ближайшее время.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Modal for all pages end-->
+
+<!--For all pages START-->
+<link rel="stylesheet" href="css/main.min.css">
+<link rel="stylesheet" href="css/custom.css">
+<script src="js/scripts.min.js"></script>
+<script src="js/common.js"></script>
+<!--For all pages END-->
+<!--For this pages START-->
+
+<!--For this pages END-->
+
+<script>
+    /*For this page START*/
+    /*For this page END*/
+
+    /*For all pages START*/
+    $(function() {
+        $('input[type="tel"]').mask("+7 (999) 999-9999");
+
+        /*Открытие подменю на мобильной версии в шапке сайта*/
+        $('.headSubmOpen').on('click', function () {
+            if($(this).hasClass('active')){
+                $(this).removeClass('active');
+                $('.js-headSubm').slideUp();
+            }
+            else {
+                $(this).addClass('active');
+                $('.js-headSubm').slideDown();
+            }
+        });
+
+        $(window).resize(function () {
+//			$('.headSubmOpen').addClass('active');
+//			$('.js-headSubm').slideDown();
+        });
+
+    });
+    /*For all pages END*/
+</script>
+
+</body>
+</html>
